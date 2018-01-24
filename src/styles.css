@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+html, body, app-root {
+    padding:0.3%;
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    height: 99%;
+    overflow: hidden;
+}
+
+.fa-shopping-cart {
+  position: relative;
+  font-size: 2em;
+  color: grey;
+  cursor: pointer;
+  padding-right: 15px;
+}
+span.fa-comment {
+  position: absolute;
+  font-size: 1.8em;
+  top: -4px;
+  color: red;
+  right: -4px;
+}
+span.num {
+  position: absolute;
+  font-size: 0.7em;
+  top: 1px;
+  color: #fff;
+  right: 6px;
+}
+
+
+.free {
+    position: absolute;
+    right: 160px;
+    top: 11px;
+}
+
+.pointer {
+  cursor: pointer;
+}

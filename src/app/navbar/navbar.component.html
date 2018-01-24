@@ -1,0 +1,53 @@
+<nav class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-left">
+
+        <ul class="uk-navbar-nav">
+            <li class="uk-active">
+                <a href="#">Home</a>
+            </li>
+        </ul>
+    </div>
+    <div class="uk-navbar-center">
+        <a href="" class="uk-navbar-item uk-logo">{{shopName}}</a>
+    </div>
+    <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav">
+            <li class="uk-active">
+                <a href="#">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <div class="free">
+                        <span class="fa fa-comment"></span>
+                        <span class="num">{{itemCount}}</span>
+                    </div>
+                </a>
+            </li>
+            <li *ngIf="loggedIn">
+                <a href="#">Mr Konrad Kolpak</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li class="uk-active">
+                            <a href="#">Account settings</a>
+                        </li>
+                        <li>
+                            <a href="#">Orders</a>
+                        </li>
+                        <li>
+                            <a href="#">Sign out</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+
+            <li class="uk-navbar-item" *ngIf="!loggedIn">
+                <button class="uk-button uk-button-primary" (click)="showLoginPage()" >Sign in</button>
+            </li>
+
+        </ul>
+    </div>
+
+</nav>
+
+
+
+
